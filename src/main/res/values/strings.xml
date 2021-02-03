@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Telegram de buget</string>
+    <string name="users_list_unread_messages">Your chatrooms</string>
+    <string name="nr_unread_messages">[%1$d unread messages]</string>
+</resources>

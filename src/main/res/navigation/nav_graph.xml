@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersListFragment">
+
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="mobile.birdie.exam1.messages.usersList.UsersListFragment"
+        android:label="UsersListFragment" >
+        <action
+            android:id="@+id/action_usersListFragment_to_viewMessagesFragment"
+            app:destination="@id/viewMessagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewMessagesFragment"
+        android:name="mobile.birdie.exam1.messages.viewMessages.ViewMessagesFragment"
+        android:label="ViewMessagesFragment" >
+        <argument
+            android:name="user"
+            app:argType="mobile.birdie.exam1.messages.data.User"
+            app:nullable="true" />
+    </fragment>
+</navigation>
